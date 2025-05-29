@@ -1,0 +1,9 @@
+streamlit
+llama-index
+llama-index-llms-ollama
+llama-index-embeddings-huggingface # Or llama-index-embeddings-ollama if you use Ollama for embeddings
+chromadb
+sentence-transformers
+pypdf2 # For PDF document loading
+# ctransformers # Add if you decide to use GGUF models with ctransformers backend
+# llama-cpp-python # Add if you decide to use GGUF models with llama.cpp backend
