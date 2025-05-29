@@ -13,3 +13,4 @@ chroma_db_streamlit/
 # (e.g., if they are large or sensitive, or you want users to add their own)
 # If you DO want to commit your sample files, ensure sample_documents/ is NOT in .gitignore
 sample_documents/
+chroma_db_agent/
