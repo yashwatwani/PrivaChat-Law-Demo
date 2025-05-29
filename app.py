@@ -1,8 +1,17 @@
+# In app.py (at the very top)
+import sys
+import os
+
+# Add the project root to the Python path to ensure 'src' can be found
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__)))
+if PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, PROJECT_ROOT)
+
+# Original imports
 import streamlit as st
 from src.rag_query_engine import get_query_engine # Assuming your module structure
 from src.document_processor import load_documents, chunk_documents
 from src.vector_store_manager import get_vector_store, create_index_from_nodes
-import os
 
 # --- Configuration ---
 DOCS_DIR = "sample_documents/"
